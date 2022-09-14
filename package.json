@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./db/index.js && node dist/src/index.js",
+    "start": "node db/index.js && node dist/src/index.js",
     "start:dev": "ts-node-dev src/index.ts",
     "db": "ts-node-dev ./db/index.ts",
     "build": "tsc -p tsconfig.prod.json",
