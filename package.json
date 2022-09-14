@@ -1,0 +1,46 @@
+{
+  "name": "phone-auth-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:prod": "node dist/src/index.js",
+    "start:dev": "ts-node-dev src/index.ts",
+    "db": "ts-node-dev ./db/index.ts",
+    "build": "tsc -p tsconfig.prod.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthewnte/phone-auth-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matthewnte/phone-auth-api/issues"
+  },
+  "homepage": "https://github.com/Matthewnte/phone-auth-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.1",
+    "firebase": "^9.9.4",
+    "firebase-admin": "^11.0.1",
+    "mongodb": "^4.9.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^29.0.1",
+    "@types/morgan": "^1.9.3",
+    "@types/validator": "^13.7.6",
+    "jest": "^29.0.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.3"
+  }
+}
